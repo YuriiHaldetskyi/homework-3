@@ -6,6 +6,7 @@
   --actionaly-txt-cl: #2196f3;
   --white-txt-cl: #ffffff;
   --gray-txt-cl-60: rgba(255, 255, 255, 0.6);
+  --gray-txt-cl: #ececec;
   /* Back ground */
   --primaty-bg-cl: #f5f5f5;
   --secondary-bg-cl: #f5f4fa;
@@ -13,6 +14,7 @@
   --main-bg-cl: #ffffff;
   --active-btn-cl: #188ce8;
   /* Others */
+  --main-br-cl: #eeeeee;
 }
 /* Body */
 .page {
@@ -57,6 +59,7 @@ p {
   padding: 32px 0;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-link {
@@ -135,6 +138,7 @@ p {
   color: var(--white-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -282,34 +286,56 @@ p {
   opacity: 0;
 }
 /* Кнопки + ховел і фокус  */
+.portf-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .portf-button {
   cursor: pointer;
   font-family: inherit;
   background: var(--secondary-bg-cl);
-  border-radius: 4px;
+  border-radius: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border-color: transparent;
+  margin-right: 8px;
+  padding: 6px 22px;
+  margin-bottom: 34px;
 }
 .portf-button:hover,
 .portf-button:focus {
   background: var(--actionaly-txt-cl);
   color: var(--white-txt-cl);
 }
+.portf-gallary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+.portf-card {
+  background: var(--white-txt-cl);
+  width: 370px;
+  border: 1px solid;
+  border-color: var(--main-br-cl);
+}
+
 /* h2 - під картинками */
 .portf-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  margin: 20px 24px 0;
 }
 /* Текст під h2 */
 .portf-text {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--secondary-txt-cl);
+  margin: 4px 24px 20px;
 }
