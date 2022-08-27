@@ -46,7 +46,19 @@ ul,
 p {
   margin: 0;
 }
-
+/* Ховаємо заголовок */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -112,7 +124,7 @@ p {
   background: var(--actionaly-bg-cl);
   outline: 1px solid red;
 }
-.container-hero {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
@@ -141,6 +153,7 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -171,6 +184,9 @@ p {
   color: var(--secondary-txt-cl);
 }
 /* What we doing (Works) */
+.section.work {
+  padding-top: 0;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -207,13 +223,15 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-descp {
+  padding: 30px 0px;
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-text {
@@ -222,7 +240,6 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
-  margin-bottom: 30px;
 }
 /* Footer */
 .footer {
@@ -286,6 +303,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
 }
 .portf-button {
   cursor: pointer;
@@ -298,9 +317,7 @@ p {
   text-align: center;
   border-radius: 4px;
   border-color: transparent;
-  margin-right: 8px;
   padding: 6px 22px;
-  margin-bottom: 34px;
 }
 .portf-button:hover,
 .portf-button:focus {
@@ -315,22 +332,26 @@ p {
 .portf-card {
   background: var(--white-txt-cl);
   width: 370px;
-  border: 1px solid;
-  border-color: var(--main-br-cl);
+  flex-basis: calc(100% / 3 - 30);
 }
 
 /* h2 - під картинками */
+.card-container {
+  padding: 20px 24px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-color: var(--main-br-cl);
+}
 .portf-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  margin: 20px 24px 0;
 }
 /* Текст під h2 */
 .portf-text {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--secondary-txt-cl);
-  margin: 4px 24px 20px;
 }
