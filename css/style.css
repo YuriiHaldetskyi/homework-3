@@ -69,7 +69,8 @@ p {
 /* HEADER */
 .header-container {
   display: flex;
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #ececec;
@@ -123,7 +124,6 @@ p {
 /* HERO*/
 .hero {
   background: var(--actionaly-bg-cl);
-  outline: 1px solid red;
 }
 .hero {
   padding-top: 200px;
@@ -153,7 +153,7 @@ p {
   color: var(--white-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: transparent;
+  border: none;
   padding: 10px 32px;
 }
 .hero-btn:hover,
@@ -260,10 +260,8 @@ p {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
-.adress-list {
-  display: flex;
-  gap: 9px;
-  flex-direction: column;
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .logo-footer-web {
   color: var(--actionaly-txt-cl);
